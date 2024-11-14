@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     // State for controlling mobile menu visibility
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -45,8 +45,57 @@ const Navbar = () => {
         // </nav>
 
 
-        <nav className='bg-white '>
+        <nav className='bg-white  '>
+           <div className='container mx-auto px-4 flex justify-between items-center py-4 border-4'>
+             <div className='text-2xl text-blue-600 font-bold'>
+                KhanBites
+             </div>
+             <div className=' flex justify-between '>
+                <Link to=" ">
+                 Home   
+                </Link>
+                <Link to=" ">
+                 Services
+                </Link>
+                <Link to=" ">
+                 About
+                </Link>
+                <Link to=" ">
+                 Contact
+                </Link>
+             </div>
+             <div>
 
+                <button onClick={()=> setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                </button>
+             </div>
+             
+           </div>
+           {isMobileMenuOpen &&(
+
+            <div >
+              <Link to=" ">
+                 Home
+                </Link>
+                <Link to=" ">
+                 Services
+                </Link>
+                <Link to=" ">
+                 About
+                </Link>
+                <Link to=" ">
+                 Contact
+                </Link>
+            </div>
+           )}
+
+           {/* <h1 className='text-green-50 sm:text-amber-700 md:text-fuchsia-700 lg:text-lg  lg:text-blue-500'>
+             waleed khan 
+
+           </h1> */}
         </nav>
     );
 }

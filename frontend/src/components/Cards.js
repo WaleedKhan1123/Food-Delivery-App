@@ -15,7 +15,7 @@ const Cards = () => (
       <p>Card content</p>
       <p>Card content</p>
     </Card>
-    <Card
+    {/* <Card
       size="small"
       title="Small size card"
       extra={<a href="#">More</a>}
@@ -27,7 +27,7 @@ const Cards = () => (
       <p>Card content</p>
       <p>Card content</p>
       <p>Card content</p>
-    </Card>
+    </Card> */}
   </Space>
 );
 export default Cards;
