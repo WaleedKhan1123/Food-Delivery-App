@@ -4,8 +4,8 @@ import Cards from "../components/Cards";
 
 const Home = () => {
     return (<div  className="">
-        <Navbar/> 
-        
+        this is home
+
     </div>  );
 }
  

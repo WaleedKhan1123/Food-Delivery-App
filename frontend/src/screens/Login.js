@@ -4,7 +4,6 @@ const Login = () => {
     return (
     <div>
 
-        <Navbar/>
         
         <div className=" container">
         <h1 className="bg-slate-500  mx-auto max-w-10 ">
