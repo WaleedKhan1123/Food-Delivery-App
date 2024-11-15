@@ -5,6 +5,8 @@ import Cards from "../components/Cards";
 const Home = () => {
     return (<div  className="">
         <Navbar/> 
+
+    <div className="hidden">
         <br/>
         <h1 className=" grid place-content-center  border-2 " >
             Hello World!
@@ -19,6 +21,7 @@ const Home = () => {
      <Cards/>
     <div className="border-4">
         <Footer />
+    </div>
     </div>
     </div>  );
 }

@@ -45,26 +45,26 @@ const Navbar = () => {
         // </nav>
 
 
-        <nav className='bg-white  '>
-           <div className='container mx-auto px-4 flex justify-between items-center py-4 border-4'>
+        <nav className='bg-white  shadow-md'>
+           <div className='container mx-auto px-4 flex justify-between items-center py-4 '>
              <div className='text-2xl text-blue-600 font-bold'>
                 KhanBites
              </div>
-             <div className=' flex justify-between '>
-                <Link to=" ">
+             <div className='hidden md:flex space-x-16 text-gray-700 font-semibold'>
+                <Link to=" " className='hover:text-blue-600'>
                  Home   
                 </Link>
-                <Link to=" ">
+                <Link to=" "className='hover:text-blue-500' >
                  Services
                 </Link>
-                <Link to=" ">
+                <Link to=" " className='hover:text-blue-500'>
                  About
                 </Link>
-                <Link to=" ">
+                <Link to=" " className='hover:text-blue-500'>
                  Contact
                 </Link>
              </div>
-             <div>
+             <div className=' md:hidden '>
 
                 <button onClick={()=> setIsMobileMenuOpen(!isMobileMenuOpen)}>
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -76,26 +76,23 @@ const Navbar = () => {
            </div>
            {isMobileMenuOpen &&(
 
-            <div >
-              <Link to=" ">
+            <div  className='md:hidden bg-white px-4 pb-4 space-y-2 flex items-end flex-col  mx-20 border-4 '>
+              <Link to=" " className='block text-gray-700 font-semibold hover:text-blue-600'>
                  Home
                 </Link>
-                <Link to=" ">
+                <Link to=" " className='block text-gray-700 font-semibold hover:text-blue-600'>
                  Services
                 </Link>
-                <Link to=" ">
+                <Link to=" " className='block text-gray-700 font-semibold hover:text-blue-600'>
                  About
                 </Link>
-                <Link to=" ">
+                <Link to=" " className='block text-gray-700 font-semibold hover:text-blue-600'>
                  Contact
                 </Link>
             </div>
            )}
 
-           {/* <h1 className='text-green-50 sm:text-amber-700 md:text-fuchsia-700 lg:text-lg  lg:text-blue-500'>
-             waleed khan 
-
-           </h1> */}
+         
         </nav>
     );
 }
