@@ -1,12 +1,12 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Cards from "../components/Cards";
 
 const Home = () => {
-    return (<div  className="">
-        this is home
+  return (
+    <div className="">
+      This div has a background image.
+      <Cards />
+    </div>
+  );
+};
 
-    </div>  );
-}
- 
 export default Home;

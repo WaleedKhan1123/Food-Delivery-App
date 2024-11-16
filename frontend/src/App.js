@@ -3,28 +3,22 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./screens/Home";
 import Login from "./screens/Login";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-  
-  <div>
-    
+    <div>
+      <Navbar />
 
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Login" element={<Login />} />
+      </Routes>
 
-    <Navbar/>
-
-    <Routes>
-     
-     <Route path="/" element={<Home/>}/>
-     <Route path="/Login" element={<Login/>}/>
-
-
-    </Routes>
-   {/* <Home/>
-
-<Login/> */}
-
-  </div>  );
+      <Footer />
+      {/* <Login/>  */}
+    </div>
+  );
 }
 
 export default App;
