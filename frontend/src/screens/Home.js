@@ -7,11 +7,11 @@ const Home = () => {
     <div className="">
       <Navbar />
       <Carousel />
-
-      <Cards />
-      <Cards />
-      <Cards />
-
+      <div className="flex flex-col justify-between md:flex-row ">
+        <Cards />
+        <Cards />
+        <Cards />
+      </div>
       <Footer />
     </div>
   );
