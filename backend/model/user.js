@@ -22,5 +22,8 @@ const hostelApplicationStructure = mongoose.Schema({
     default: Date.now,
   },
 });
-const hostelApplicationModel = mongoose.model("", hostelApplicationStructure);
+const hostelApplicationModel = mongoose.model(
+  "user",
+  hostelApplicationStructure
+);
 export default hostelApplicationModel;
