@@ -1,6 +1,6 @@
 import mongoose, { trusted } from "mongoose";
 
-const hostelApplicationStructure = mongoose.Schema({
+const User = mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -22,8 +22,5 @@ const hostelApplicationStructure = mongoose.Schema({
     default: Date.now,
   },
 });
-const hostelApplicationModel = mongoose.model(
-  "user",
-  hostelApplicationStructure
-);
-export default hostelApplicationModel;
+const CreateUser = mongoose.model("user", User);
+export default CreateUser;
