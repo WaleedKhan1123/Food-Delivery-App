@@ -7,7 +7,7 @@ const Home = () => {
     <div className="">
       <Navbar />
       <Carousel />
-      <div className="flex flex-col justify-between md:flex-row ">
+      <div className="flex flex-wrap flex-col-reverse ">
         <Cards />
         <Cards />
         <Cards />
